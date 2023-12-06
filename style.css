@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.main-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    flex-direction: column;
+}
+.navbar{
+    height: auto;
+    width: 100%;
+    padding-inline: 3%;
+    padding-block: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.navbar img{
+    width: 150px;
+
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.navbar ul li:first-child{
+    color: black;
+    text-decoration: underline;
+}
+
+.navbar ul li{
+    font-size: 19px;
+    color: rgb(182,179,178);
+    list-style: none;
+}
+
+.navbar button{
+    height: 50px;
+    width: auto;
+    border-radius: 15px;
+    padding-inline: 30px;
+    background-color: rgb(255,216,219);
+    color: rgb(130,88,255);
+    border: none;
+    
+}
+
+.hero-section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 8%;
+}
+
+.left{
+    height: 650px;
+    width: 45%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 3%;
+    
+}
+.text{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+
+}
+.left h1{
+    font-size: 80px;
+    width: 90%;
+}
+h1 span{
+    color: rgb(130,88,255);
+}
+.left p{
+    font-size: 19px;
+    width: 60%;
+}
+
+
+
+.span{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap: 90px;
+}
+.span button{
+    height: 50px;
+    width:150px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color:rgb(130, 88, 255) ;
+    color: white;
+    border: none;
+}
+.span button:last-child{
+    height: 50px;
+    width: 50px;
+    font-size: 19px;
+    background-color: white;
+    color: black;
+    border: 0.1px solid rgb(216, 213, 213);
+}
+
+.span1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.span1 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: auto;
+    column-gap: 10px;
+}
+.span1 h1 i{
+    background-color: rgb(253,178,199);
+    border: 10px solid rgb(253,178,199);
+    border-radius: 20px;
+}
+
+.span1 img{
+    width: 150px;
+}
+.right{
+    height: 650px;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right img{
+    width: 95%;
+}
+
+@media(max-width:768px){
+    .main-container{
+        row-gap: 0px;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+        padding-inline: 0%;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        height: auto;
+        row-gap: 50px;
+        padding-inline: 10%;
+        
+    }
+    .right{
+        width: 100%;
+        height: auto;
+        
+    }
+    .left h1{
+        font-size: 40px;
+    }
+    .span1 h1{
+        font-size: 16px;
+    }
+
+}
